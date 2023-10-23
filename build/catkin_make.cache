@@ -1,0 +1,2 @@
+demo_pkg:gazebo_demo:slam_pkg:where_dependencis
+-DCATKIN_DEVEL_PREFIX=/home/wrs/nav_tutorial_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wrs/nav_tutorial_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/wrs/nav_tutorial_ws/install
+
+Name: where_dependencis
+Description: Description of where_dependencis
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

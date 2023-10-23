@@ -1,0 +1,11 @@
+<launch>
+    <!--rviz-->
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
+    <!-- <node pkg="rviz" type="rviz" name="rviz" arg="-d $(find gazebo_demo)/config/rviz/slam_demo.rviz" /> 不用配置文件的原因在于该配置文件是用于slam建图的-->
+     <node pkg="rviz" type="rviz" name="rviz"/>
+    <!--load map server-->
+    <include file="$(find gazebo_demo)/launch/gmap_map_server.launch" />
+    <!--amcl: set param and launch localizing node-->
+    <include file="$(find gazebo_demo)/launch/amcl_localize.launch" />
+</launch>

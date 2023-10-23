@@ -1,0 +1,5 @@
+<launch>
+    <!--nav是保存的地图名称，不设置时自动生成-->
+    <arg name="filename" value="$(find gazebo_demo)/map/nav" />    <!--仅仅需要改保存路径-->
+    <node name="map_save" pkg="map_server" type="map_saver" args="-f $(arg filename)" />
+</launch>
